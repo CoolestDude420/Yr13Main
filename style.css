@@ -799,7 +799,9 @@ label:active:after {
 		top: 12vh;
 		padding-left: 0%;
 	}
-
+	.multi-parallax-container-about {
+		background:var(--bg-panel);
+	}
 	.multi-parallax-container-about img {
 		width: 70vw;
 	}
