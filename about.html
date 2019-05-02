@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>About RhinoShield</title>
+	<link href="favicon.png" rel="shortcut icon" type="image/png">
+	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script>
+	<script src="main.js">
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="first-main-nav-container">
+		<div class="main-nav-container">
+			<div class="nav-row">
+				<div class="logo">
+					<img alt="RhinoShield logo" height="58px" src="logo.png">
+					<div class="main-logo-text">
+						<div class="main-logo-text1">
+							Rhino
+						</div>
+						<div class="main-logo-text2">
+							Shield
+						</div>
+					</div>
+				</div>
+				<div class="nav-controls" id="mySidenav">
+					<a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i></i><i></i><i></i></a> <a href="index.html">Home</a><a href="technique.html">Technique</a><a href="about.html">About</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav_btn" onclick="openNav()">
+		<i></i><i></i><i></i>
+	</div>
+	<div class="nav-row-mobile">
+		<div class="logo">
+			<img alt="RhinoShield logo" height="58px" src="logo.png">
+			<div class="main-logo-text">
+				<div class="main-logo-text1">
+					Rhino
+				</div>
+				<div class="main-logo-text2">
+					Shield
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-background poly poly-about"></div>
+	<div id="page-container">
+		<div class="quote">
+			<img src="Content/images/Evo-logo.png"><br>
+			<br>
+			<p>We are a company dedicated to making your lives a bit more safe; case by case.</p><br>
+		</div>
+		<div class="info-container">
+			<div class="info-container-img1 info-container-img1-about"><img src="Content/images/starter-about.jpg"></div>
+			<div class="info-container-text-right">
+				<br>
+				<br>
+				<h1>RhinoShield by Evolution</h1>
+				<p>We are committed to developing innovative new technologies and embarking on interesting projects. Evolutive Labs was founded by a number of students from the University of Cambridge in April 2012. Our Research & Development team uses its strong material science and engineering background to create high quality products.</p><br>
+				<br>
+			</div>
+		</div>
+		<div class="multi-parallax-container multi-parallax-container-about">
+			<div class="multi-parallax-container-text multi-parallax-container-text-about"><img src="Content/images/aboutpage-kick-logo.png"></div>
+		</div>
+		<div class="info-container">
+			<div class="info-container-text-left">
+				<h1>Our Start</h1>
+				<p>Our initial products were funded by the Kickstarter community. Our Kickstarter supporters tested Rhino Shield through everyday use for two months. We were able to refine the product because of their feedback and we will always be grateful for the time they dedicated to us.</p>
+			</div>
+			<div class="info-container-img2"><img src="Content/images/kickstarter-logo.png"></div>
+		</div>
+	</div>
+	<div class="newsletter-container">
+		<div class="newsletter-text">
+			<p></p>
+			<h1>Subscribe to our Newsletter</h1>
+			<h4>to keep up to date on the latest news</h4>
+			<p></p>
+		</div>
+		<div class="newsletter-search-box">
+			<input class="newsletter-search-txt" name="" placeholder="YourEmail@domain.com" type="text"> <a class="newsletter-search-btn" id="news" onclick="NewsletterAlert()"><i class="far fa-check-circle"></i></a>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-info">
+			<img alt="RhinoShield logo" src="logo.png" width="50px"> RhinoShield<br>
+			<p class="footer-links"><a href="index.html">Home</a> · <a href="technique.html">Technique</a> · <a href="about.html">About</a></p>
+			<p>Rhino Shield &copy; 2019. All rights reserved.</p>
+			<p>Wepage developed by Abdurrahman Obaidullah &copy; 2019</p>
+		</div>
+		<div class="footer-social-media">
+			<div class="container-dark">
+				<p>Light/ Dark Mode</p>
+				<div class="toggle-container">
+					<input id="switch" name="theme" type="checkbox"><label for="switch">Toggle</label>
+				</div>
+			</div><a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</footer>
+	<script src="dark-mode.js">
+	</script>
+</body>
+</html>
