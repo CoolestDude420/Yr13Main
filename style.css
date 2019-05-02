@@ -158,7 +158,7 @@ p {
 .poly, .poly-technique, .poly-about {
 	-webkit-clip-path: polygon(0% 84%, 70% 100%, 100% 94%, 100% 0%, 0% 0%);
 	clip-path: polygon(0% 84%, 70% 100%, 100% 94%, 100% 0%, 0% 0%);
-	background: url('Content/images/index-main.jpg') fixed;
+	background: url('index-main.jpg') fixed;
 	background-position-x: center;
 	background-size: cover;
 	transform: translateY(-5vh);
@@ -166,13 +166,13 @@ p {
 	content: "";
 }
 .poly-technique {
-	background: url('Content/images/main-technique.jpg') fixed;
+	background: url('main-technique.jpg') fixed;
 	background-position-x: center;
 	background-size: cover;
 	height: 84vh;
 }
 .poly-about {
-	background: url('Content/images/triangle-poly-about.jpg') fixed;
+	background: url('triangle-poly-about.jpg') fixed;
 	background-position-x: center;
 	background-size: cover;
 	height: 90vh;
@@ -194,7 +194,7 @@ p {
 	font-size: 120%;
 }
 .multi-parallax-container {
-	background: url("Content/images/one-case-mp.jpg") fixed;
+	background: url("one-case-mp.jpg") fixed;
 	background-position: center;
 	height: 55vh;
 	width: 100%;
@@ -206,13 +206,13 @@ p {
 	background-blend-mode: overlay;
 }
 .multi-parallax-container-technique {
-	background: url("Content/images/solidsuit-drop-min.jpg") fixed;
+	background: url("solidsuit-drop-min.jpg") fixed;
 	background-position: center;
 	background-size: cover;
 	text-align: center;
 }
 .multi-parallax-container-about {
-	background: url("Content/images/about-parallax.jpg") fixed;
+	background: url("about-parallax.jpg") fixed;
 	background-position: center;
 	background-size: cover;
 	text-align: left;
