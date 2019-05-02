@@ -799,10 +799,7 @@ label:active:after {
 		top: 12vh;
 		padding-left: 0%;
 	}
-	.multi-parallax-container-about {
-		text-align: center;
-		padding-left: 0;
-	}
+
 	.multi-parallax-container-about img {
 		width: 70vw;
 	}
