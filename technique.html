@@ -13,40 +13,7 @@
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
         </script>
-        <script>
-            // the sidenav goes on to the screen with width 250
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("page-container").style.marginRight = "200px";
-                document.getElementById("page-container").style.marginLeft = "-200px";
-            }
-            //the sidenav goes off screen by using margin of zero
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("page-container").style.marginRight = "0";
-                document.getElementById("page-container").style.marginLeft = "0";
-            }
-            $(window).scroll(function() {
-                var scrollval = $(this).scrollTop(); // this returns your scroll value position
-                $("#m-logo").css("transform", "translate(0px,-" + scrollval / 2 + "%)");
-                $("#m-btn").css("transform", "translate(-50%," + scrollval / 3 + "%)");
-            });
-            // adds class when the page scrolls to where the polyon starts
-            $(document).ready(function() {
-                $(window).scroll(function() {
-                    var height = $(".main-background").height();
-                    var scrollTop = $(window).scrollTop();
-                    if (scrollTop >= height - ((height / 3 / .95))) {
-                        $(".main-nav-container").addClass("solid-nav");
-                    } else {
-                        $(".main-nav-container").removeClass("solid-nav");
-                    }
-                });
-            });
-            // telling user that they have signed up for newsletter
-            function NewsletterAlert() {
-                alert("Thank You for subscribing to our Newsletter")
-            }
+        <script src="main.js">
         </script>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
@@ -205,27 +172,7 @@
                     target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </footer>
-        <script>
-            // variable ste
-            var checkbox = document.querySelector("input[name=theme]");
-            // if the switch is checkd the dark theme attritube will change to dark and display a warnig
-            checkbox.addEventListener("change", function() {
-                    if (this.checked) {
-                        trans()
-                        document.documentElement.setAttribute("data-theme", "dark")
-                        alert("WARNING: \nDark Mode is only experimental and may have performance or visual issues!")
-                    } else {
-                        trans()
-                        document.documentElement.setAttribute("data-theme", "light")
-                    }
-                })
-                // transition for switching to night mode
-            let trans = () => {
-                document.documentElement.classList.add("transition");
-                window.setTimeout(() => {
-                    document.documentElement.classList.remove("transition")
-                }, 1000)
-            }
+        <script src="dark-mode.js">
         </script>
     </body>
 
