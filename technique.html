@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+    <head>
+        <!-- meta tags for scalability and small bits and bobs -->
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <!-- text that shows up on the browser tab text -->
+        <title>Techniques- RhinoShield</title>
+        <!-- favicon -->
+        <link href="favicon.png" rel="shortcut icon" type="image/png">
+        <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        </script>
+        <script>
+            // the sidenav goes on to the screen with width 250
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("page-container").style.marginRight = "200px";
+                document.getElementById("page-container").style.marginLeft = "-200px";
+            }
+            //the sidenav goes off screen by using margin of zero
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("page-container").style.marginRight = "0";
+                document.getElementById("page-container").style.marginLeft = "0";
+            }
+            $(window).scroll(function() {
+                var scrollval = $(this).scrollTop(); // this returns your scroll value position
+                $("#m-logo").css("transform", "translate(0px,-" + scrollval / 2 + "%)");
+                $("#m-btn").css("transform", "translate(-50%," + scrollval / 3 + "%)");
+            });
+            // adds class when the page scrolls to where the polyon starts
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    var height = $(".main-background").height();
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop >= height - ((height / 3 / .95))) {
+                        $(".main-nav-container").addClass("solid-nav");
+                    } else {
+                        $(".main-nav-container").removeClass("solid-nav");
+                    }
+                });
+            });
+            // telling user that they have signed up for newsletter
+            function NewsletterAlert() {
+                alert("Thank You for subscribing to our Newsletter")
+            }
+        </script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!-- start of nav bar -->
+        <div class="first-main-nav-container">
+            <div class="main-nav-container main-nav-container-tech">
+                <div class="nav-row">
+                    <div class="logo">
+                        <!-- logo in nav bar -->
+                        <img alt="RhinoShield logo" height="58px" src="logo.png">
+                        <div class="main-logo-text">
+                            <div class="main-logo-text1">
+                                Rhino
+                            </div>
+                            <div class="main-logo-text2">
+                                Shield
+                            </div>
+                        </div>
+                    </div>
+                    <!-- logo in nav bar -->
+                    <div class="nav-controls" id="mySidenav">
+                        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i></i><i></i><i></i></a> <a href="index.html">Home</a><a href="technique.html">Technique</a><a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo in nav bar -->
+        <div class="nav_btn" onclick="openNav()">
+            <i></i><i></i><i></i>
+        </div>
+        <div class="nav-row-mobile">
+            <div class="logo">
+                <img alt="RhinoShield logo" height="58px" src="logo.png">
+                <div class="main-logo-text">
+                    <div class="main-logo-text1">
+                        Rhino
+                    </div>
+                    <div class="main-logo-text2">
+                        Shield
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo in nav bar -->
+        <div class="main-background poly poly-technique"></div>
+        <!-- container that contains the entire page -->
+        <div id="page-container">
+            <div class="first-info">
+                <img alt="Shockspread logo" id="explore-dest" src="Content/images/shockspread.png"><br>
+                <br>
+                <p>Absorbs up to 11 feet / 3.5m of impact</p><br>
+                <!-- welcome text after the shockspread logo -->
+            </div>
+            <!-- first information container. all content for this section is in this container -->
+            <div class="info-container">
+                <div class="info-container-img1 info-container-img1-technique"><img alt="phone with rhinoShield case has just hit the ground" src="Content/images/absorbs-impact.png"></div>
+                <div class="info-container-text-right info-container-text-right-technique">
+                    <br>
+                    <br>
+                    <h1>Absorbs over 11 feet impact</h1>
+                    <p>Our proprietary ShockSpreadTM polymer blend can absorb at least 11 feet (3.5m) of impact, surpassing the US military drop test standard. Best of all, it does the job despite being 20% thinner than other cases that offer a similar level
+                        of protection.</p><br>
+                    <br>
+                </div>
+            </div>
+            <!-- parallax that seperates the two information -->
+            <div class="multi-parallax-container multi-parallax-container-technique">
+                <div class="multi-parallax-container-text multi-parallax-container-text-technique">
+                    <h2>Protective honeycomb structure</h2><br>
+                    <h3>This innovation in structure will add an additional 10%-15% of overall impact absorbency.</h3>
+                </div>
+            </div>
+            <!-- second info container starts -->
+            <div class="info-container">
+                <div class="info-container-text-left info-container-text-left-technique">
+                    <h1>Formulated Polymers</h1>
+                    <p>We created a new polymer blend for our bumper that provides more than 90% of its impact absorbing capability. The slim protective case that gives you maximum protection with a premium finish.</p>
+                </div>
+                <div class="info-container-img2 info-container-img2-technique"><img alt="RhinoShield logo partially under water" src="Content/images/beach-logo.jpg"></div>
+            </div>
+        </div>
+        <!-- gallery starts now -->
+        <div class="info-container-gallery-all-technique">
+            <h1>Gallery</h1>
+            <h4>Have a look for yourself!</h4>
+            <div class="info-container-gallery-technique-img"><img alt="image of the inside of a RhinoShield case" src="Content/images/technique-hex.jpg"></div>
+        </div>
+        <!-- first of the 4 images -->
+        <div class="gallery">
+            <div class="technique-gallery">
+                <div class="technique-gallery-main">
+                    <img alt="Maximum protection" height="400" src="Content/images/pic1-gallery.jpg" width="600">
+                    <div class="desc">
+                        Maximum protection
+                    </div>
+                </div>
+            </div>
+            <!-- second of 4 -->
+            <div class="technique-gallery">
+                <div class="technique-gallery-main">
+                    <img alt="No cover up" height="400" src="Content/images/pic2-gallery.jpg" width="600">
+                    <div class="desc">
+                        No cover up
+                    </div>
+                </div>
+            </div>
+            <!-- third of 4 -->
+            <div class="technique-gallery">
+                <div class="technique-gallery-main">
+                    <img alt="As light as a penicl" height="400" src="Content/images/pic3-gallery.jpg" width="600">
+                    <div class="desc">
+                        As light as a pencil
+                    </div>
+                </div>
+            </div>
+            <!-- fourth of 4 -->
+            <div class="technique-gallery">
+                <div class="technique-gallery-main">
+                    <img alt="Enhance you grip" height="400" src="Content/images/pic4-gallery.jpg" width="600">
+                    <div class="desc">
+                        Enhance your grip
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- newsletter starts here -->
+        <div class="newsletter-container">
+            <div class="newsletter-text">
+                <p></p>
+                <h1>Subscribe to our Newsletter</h1>
+                <h4>to keep up to date on the latest news</h4>
+                <p></p>
+            </div>
+            <div class="newsletter-search-box">
+                <input class="newsletter-search-txt" name="" placeholder="YourEmail@domain.com" type="text"> <a class="newsletter-search-btn" id="news" onclick="NewsletterAlert()"><i class="far fa-check-circle"></i></a>
+            </div>
+        </div>
+        <!-- newsletter ends and footer starts -->
+        <footer class="footer">
+            <div class="footer-info">
+                <img alt="RhinoShield logo" src="logo.png" width="50px"> RhinoShield<br>
+                <p class="footer-links"><a href="index.html">Home</a> · <a href="technique.html">Technique</a> · <a href="about.html">About</a></p>
+                <p>Rhino Shield &copy; 2019. All rights reserved.</p>
+                <p>Wepage developed by Abdurrahman Obaidullah &copy; 2019</p>
+            </div>
+            <div class="footer-social-media">
+                <div class="container-dark">
+                    <p>Light/ Dark Mode</p>
+                    <div class="toggle-container">
+                        <input id="switch" name="theme" type="checkbox"><label for="switch">Toggle</label>
+                    </div>
+                </div><a href="https://www.facebook.com/evolutivelabs/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/getrhinoshield?lang=en" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://www.youtube.com/channel/UCdza-WvC7s2jVzaicYSH4oA"
+                    target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+        <script>
+            // variable ste
+            var checkbox = document.querySelector("input[name=theme]");
+            // if the switch is checkd the dark theme attritube will change to dark and display a warnig
+            checkbox.addEventListener("change", function() {
+                    if (this.checked) {
+                        trans()
+                        document.documentElement.setAttribute("data-theme", "dark")
+                        alert("WARNING: \nDark Mode is only experimental and may have performance or visual issues!")
+                    } else {
+                        trans()
+                        document.documentElement.setAttribute("data-theme", "light")
+                    }
+                })
+                // transition for switching to night mode
+            let trans = () => {
+                document.documentElement.classList.add("transition");
+                window.setTimeout(() => {
+                    document.documentElement.classList.remove("transition")
+                }, 1000)
+            }
+        </script>
+    </body>
+
+</html>
